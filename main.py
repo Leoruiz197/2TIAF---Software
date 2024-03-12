@@ -1,4 +1,5 @@
 from funcoes_processamento import dividir_texto_em_palavras
+from funcoes_sentenca import identificar_adjuntos_tempo
 
 titulo = """
   _   _      _        _____
@@ -31,7 +32,10 @@ while True:
         array_palavras = dividir_texto_em_palavras(texto)
         print(array_palavras)
     elif escolha == "2":
-        print("Você escolheu a Opção 2.")
+        texto =  "Há muito tempo, não o vejo."
+        resultado = identificar_adjuntos_tempo(texto)
+        print("Adjuntos Adverbiais de Tempo:", resultado)
+
     elif escolha == "3":
         print("Você escolheu a Opção 3.")
     elif escolha == "4":
